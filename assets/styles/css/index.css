@@ -20,9 +20,9 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   --btn-size: 40px;
   --dark-gray: #222222;
   --light-gray: #f3f4f6;
-  --base-color: #0c3158;
-  --second-color: #183858;
-  --active-color: #cba052;
+  --base-color: #045031;
+  --second-color: #005c37;
+  --active-color: #388d6b;
   --bg-color: #fffbf5;
 }
 
@@ -968,6 +968,7 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   flex-direction: column;
   -ms-flex-direction: column;
   width: 33.3333333333%;
+  text-align: center;
 }
 .stepper_list .stepper_item .stepper_num {
   width: var(--btn-size);
@@ -1282,6 +1283,20 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
 .products__filter .filter_par {
   margin-left: calc(var(--base-margin) + 10px);
 }
+@media screen and (max-width: 768px) {
+  .products__filter .filter_par {
+    margin-bottom: calc(var(--base-margin) + 10px);
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .products__filter {
+    flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+  }
+}
 .products__filter .filter_box {
   align-items: center;
   justify-content: center;
@@ -1320,6 +1335,11 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   overflow-x: auto;
   white-space: nowrap;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .products__filter .filter_body {
+    width: 100%;
+  }
 }
 .products__filter .filter_body::-webkit-scrollbar {
   height: 5px;
@@ -1368,7 +1388,7 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   color: var(--active-color);
 }
 .products__filter .filter_body .filter_item:hover .img_body {
-  background-color: #cba05250;
+  background-color: #04503125;
 }
 
 .empty_box {
@@ -1978,6 +1998,7 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   }
 }
 .cart_wrapper .cart_box .cart__de {
+  overflow-x: auto;
   padding: var(--base-padding);
   border-radius: 15px;
   -webkit-border-radius: 15px;
