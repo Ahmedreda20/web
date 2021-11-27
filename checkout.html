@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/styles/css/index.css" />
+
+    <title>Hjeen - Checkout</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header__container">
+      <div class="header__box res_lg">
+        <img
+          src="/assets/images/logo.png"
+          alt="logo"
+          width="80"
+          height="80"
+          class="header__logo"
+        />
+        <nav class="header__nav">
+          <ul class="list">
+            <li class="nav_item">
+              <a href="shop.html" class="nav_link">المتجر</a>
+            </li>
+            <li class="nav_item">
+              <a href="about.html" class="nav_link">عن هجين</a>
+            </li>
+            <li class="nav_item">
+              <a href="corporate-membership.html" class="nav_link">
+                عضوية الشركات</a
+              >
+            </li>
+            <li class="nav_item">
+              <a href="supply-coffee.html" class="nav_link">حلول الجملة</a>
+            </li>
+            <li class="nav_item">
+              <a href="careers.html" class="nav_link">التوظيف</a>
+            </li>
+            <li class="nav_item">
+              <a href="contact.html" class="nav_link">تواصل معنا</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- search container -->
+        <div class="search_box">
+          <header class="box__header res_lg">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="بحث"
+              class="search__control"
+              autocomplete="off"
+              autofocus="autofocus"
+            />
+            <button class="btn__close" aria-label="btn close">
+              <i class="fas fa-times"></i>
+            </button>
+          </header>
+          <div class="search__container res_lg">
+            <figure class="item__box">
+              <figcaption>
+                <img
+                  src="/assets/images/image.jpg"
+                  alt="search item"
+                  width="70"
+                  height="70px"
+                  class="img__item"
+                />
+              </figcaption>
+              <blockquote class="item__body">
+                <h3 class="item__title">
+                  Lorem ipsum dolor sit amet consectetur.
+                </h3>
+                <p class="item__content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+                  minus dolores nisi debitis distinctio eos ipsam unde atque
+                  velit quas consequatur deserunt dicta autem voluptatem
+                  necessitatibus quia similique, sapiente est.
+                </p>
+              </blockquote>
+            </figure>
+            <figure class="item__box">
+              <figcaption>
+                <img
+                  src="/assets/images/image.jpg"
+                  alt="search item"
+                  width="70"
+                  height="70px"
+                  class="img__item"
+                />
+              </figcaption>
+              <blockquote class="item__body">
+                <h3 class="item__title">
+                  Lorem ipsum dolor sit amet consectetur.
+                </h3>
+                <p class="item__content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+                  minus dolores nisi debitis distinctio eos ipsam unde atque
+                  velit quas consequatur deserunt dicta autem voluptatem
+                  necessitatibus quia similique, sapiente est.
+                </p>
+              </blockquote>
+            </figure>
+          </div>
+        </div>
+        <!-- nav bar md screens -->
+        <div class="md__nav">
+          <header class="nv__header">
+            <div class="nv__title">القائمة</div>
+            <button class="btn__close" aria-label="btn close">
+              <i class="fas fa-times"></i>
+            </button>
+          </header>
+          <div class="nv__body">
+            <nav class="nv__nav">
+              <ul class="list">
+                <li class="nav_item">
+                  <a href="shop.html" class="nav_link">المتجر</a>
+                </li>
+                <li class="nav_item">
+                  <a href="about.html" class="nav_link">عن هجين</a>
+                </li>
+                <li class="nav_item">
+                  <a href="corporate-membership.html" class="nav_link">
+                    عضوية الشركات</a
+                  >
+                </li>
+                <li class="nav_item">
+                  <a href="supply-coffee.html" class="nav_link">حلول الجملة</a>
+                </li>
+                <li class="nav_item">
+                  <a href="careers.html" class="nav_link">التوظيف</a>
+                </li>
+                <li class="nav_item">
+                  <a href="contact.html" class="nav_link">تواصل معنا</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- header control buttons -->
+        <div class="header_controls">
+          <button
+            class="header_btn btn-search"
+            aria-label="search btn"
+            type="button"
+          >
+            <i class="fa fa-search"></i>
+          </button>
+          <button
+            class="header_btn btn_cart"
+            aria-label="cart btn"
+            type="button"
+          >
+            <i class="fas fa-shopping-bag"></i>
+          </button>
+          <a href="login.html" class="header_btn" aria-label="login btn">
+            <i class="far fa-user"></i>
+          </a>
+          <button
+            class="header_btn btn--menu"
+            aria-label="search btn"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 8h16M4 16h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- content container -->
+    <section class="content_container res_lg">
+      <div class="current_client">
+        <a href="#current_client" class="client">
+          عميل سابق؟
+          <span>أنقر هنا لتسجيل الدخول</span>
+        </a>
+        <form action="/" class="current__form">
+          <p class="content">
+            إذا تسوّقت بمتجرنا من قبل ولديك حساب لدينا، الرجاء إدخال تفاصيل
+            دخولك بالأسفل. وإذا كنت عميلاً جديدًا، فيرجى منك المتابعة إلى قسم
+            الفاتورة.
+          </p>
+          <div class="form-group">
+            <label for="email" class="form-label"> البريد الإلكتروني* </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password" class="form-label"> كلمة المرور * </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form-control"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <div class="agree-box">
+              <input type="checkbox" name="agree" id="agree" />
+              <label for="agree"> تذكرني </label>
+            </div>
+          </div>
+          <div class="form-group form-buttons">
+            <button class="btn-submit" type="submit">تسجيل الدخول</button>
+          </div>
+        </form>
+      </div>
+      <div class="stepper__container check_out">
+        <ul class="stepper_list">
+          <li class="stepper_item">
+            <h1 class="stepper_num">1</h1>
+            <p class="stepper_title">معلومات الشحن</p>
+          </li>
+          <li class="stepper_item">
+            <h1 class="stepper_num">2</h1>
+            <p class="stepper_title">المراجعة والدفع</p>
+          </li>
+          <li class="stepper_item">
+            <h1 class="stepper_num">3</h1>
+            <p class="stepper_title">شكراً !</p>
+          </li>
+        </ul>
+      </div>
+      <div class="cart_wrapper">
+        <div class="cart_box cart_deatils">
+          <h1 class="title--style">الفاتورة والشحن</h1>
+          <div class="cart__de">
+            <form action="/" class="current__form checkout">
+              <div class="form-box">
+                <div class="side">
+                  <div class="form-group sm_width">
+                    <label for="first_name" class="form-label">
+                      الإسم الأول
+                    </label>
+                    <input
+                      type="text"
+                      name="first_name"
+                      id="first_name"
+                      class="form-control"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="form-group sm_width">
+                    <label for="last_name" class="form-label">
+                      الإسم الأخير
+                    </label>
+                    <input
+                      type="text"
+                      name="last_name"
+                      id="last_name"
+                      class="form-control"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <div class="side">
+                  <div class="form-group sm_width">
+                    <label for="phone" class="form-label"> رقم التواصل </label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      class="form-control"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="form-group sm_width">
+                    <label for="email" class="form-label">
+                      البريد الإلكتروني
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <div class="side">
+                  <div class="form-group sm_width">
+                    <label for="branches" class="form-label"> المنطقة * </label>
+                    <select
+                      name="branches"
+                      id="branches"
+                      class="form-control"
+                      required
+                    >
+                      <option value="1">مناطق الرياض</option>
+                      <option value="1">مناطق اخرى</option>
+                    </select>
+                  </div>
+                  <div class="form-group sm_width">
+                    <label for="branches" class="form-label">
+                      الدولة / المنطقة *
+                    </label>
+                    <select
+                      name="branches"
+                      id="branches"
+                      class="form-control"
+                      required
+                    >
+                      <option value="1">دولة</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="address" class="form-label">
+                    عنوان الشارع / الحي *
+                  </label>
+                  <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    class="form-control"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="flat_num" class="form-label"> رقم الشقة * </label>
+                  <input
+                    type="text"
+                    name="flat_num"
+                    id="flat_num"
+                    class="form-control"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="city" class="form-label"> المدينة * </label>
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    class="form-control"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="zip" class="form-label">
+                    الرمز البريدي / ZIP *
+                  </label>
+                  <input
+                    type="text"
+                    name="zip"
+                    id="zip"
+                    class="form-control"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group check-container">
+                  <div class="check_group">
+                    <div class="form-group">
+                      <input
+                        type="checkbox"
+                        name="newsletter"
+                        id="newsletter"
+                        checked
+                      />
+                      <label for="newsletter" class="form-check-label">
+                        سجل في نشرتنا الإخبارية
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <input type="checkbox" name="new" id="new" />
+                      <label for="new" class="form-check-label">
+                        هل تودّ إنشاء حساب جديد؟
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="msg" class="form-label">
+                    ملاحظات الطلب (اختياري)
+                  </label>
+                  <textarea name="msg" id="msg" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="form-box">
+                <div class="form-group">
+                  <div class="check_group">
+                    <div class="form-group">
+                      <input type="radio" name="gender_group" id="visa" />
+                      <label for="visa" class="form-check-label">
+                        الدفع الإلكتروني
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <input type="radio" name="gender_group" id="paypal" />
+                      <label for="paypal" class="form-check-label">
+                        الدفع بواسطة أبل باي
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="agree-box">
+                  <input type="checkbox" name="agree" id="agree" />
+                  <label for="agree">
+                    لقد قرأتُ الشروط والأحكام وأوافق عليها لهذا الموقع *
+                  </label>
+                </div>
+              </div>
+              <div class="form-group form-buttons">
+                <button class="btn_form" type="button">التالي</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="cart_box">
+          <h1 class="title--style">تفاصيل الشحنة</h1>
+          <div class="cart__de">
+            <table>
+              <thead>
+                <th>المنتج</th>
+                <th>المجموع</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>القهوة المغمسة × 1</td>
+                  <td>50 ر.س (شامل ضريبة القيمة المضافة)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr class="cart-subtotal">
+                  <th>المجموع</th>
+                  <td>
+                    <span
+                      ><bdi>50&nbsp;<span>ر.س</span></bdi></span
+                    >
+                    <small class="tax_label">(شامل ضريبة القيمة المضافة)</small>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th>القسيمة: عرض الكومبو - 500 جرام</th>
+                  <td>
+                    -<span>0&nbsp;<span>ر.س</span></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>القسيمة: عرض الكومبو - 250 جرام</th>
+                  <td>
+                    -<span>0&nbsp;<span>ر.س</span></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>القسيمة: عرض الكومبو -ترحال</th>
+                  <td>
+                    -<span>0&nbsp;<span>ر.س</span></span>
+                  </td>
+                </tr>
+
+                <tr class="order-total">
+                  <th>الإجمالي</th>
+                  <td>
+                    <strong
+                      ><span
+                        ><bdi>50&nbsp;<span>ر.س</span></bdi></span
+                      ></strong
+                    >
+                    <small class="includes_tax"
+                      >(يتضمن
+                      <span>6.52&nbsp;<span>ر.س</span></span>
+                      ضريبة)</small
+                    >
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <h1 class="title--style">كوبون الخصم</h1>
+          <div class="cart__de">
+            <form class="copon_box">
+              <input
+                type="text"
+                name="code"
+                id="code"
+                placeholder="رمز القسمة"
+                required
+              />
+              <button class="btn_submit" type="submit">استخدام القسيمة</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- content container end -->
+    <!-- footer -->
+    <footer class="footer__container">
+      <div class="footer__box res_lg">
+        <nav class="footer__nav">
+          <h3 class="nv__title">روابط سريعة</h3>
+          <ul class="list">
+            <li class="nav_item"><a href="#" class="nav_link">المتجر</a></li>
+            <li class="nav_item"><a href="#" class="nav_link">عن هجين</a></li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">تعلم وابدا</a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">حلول الجملة</a>
+            </li>
+            <li class="nav_item"><a href="#" class="nav_link">التوظيف</a></li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">تواصل معنا</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <h3 class="nv__title">الاشتراك في النشرة</h3>
+          <form class="footer__sub">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="ادخل البريد الالكتروني"
+              class="sub_control"
+              required
+              autocomplete="off"
+            />
+            <button type="submit" aria-label="submit btn" class="sub_btn">
+              اشترك
+            </button>
+          </form>
+        </nav>
+        <nav class="footer__nav">
+          <h3 class="nv__title">تابعنا</h3>
+          <ul class="social_list">
+            <li class="social_item">
+              <a
+                href="http://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social_link"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social_item">
+              <a
+                href="http://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social_link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="social_item">
+              <a
+                href="http://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social_link"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="copy_box">
+        © <span class="year">2021</span> جميع الحقوق محفوظة لمحمصة هجين
+      </div>
+    </footer>
+    <!-- footer end -->
+    <button class="btn-top">
+      <i class="fas fa-angle-up"></i>
+    </button>
+    <!-- cart container -->
+    <div class="cart_container">
+      <div class="cart_box">
+        <header class="cart_header">
+          السلة
+          <button class="btn__close">
+            <i class="fas fa-times"></i>
+          </button>
+        </header>
+        <div class="cart__body">
+          <figure class="cart_item">
+            <figcaption>
+              <img
+                src="/assets/images/product-1.jpg"
+                alt="cart product"
+                class="cart_img"
+              />
+              <button class="btn__remove">REMOVE</button>
+            </figcaption>
+            <blockquote class="cart_de">
+              <h5 class="cart_title">
+                <a href="single-shop.html"> القهوة المغمسة </a>
+              </h5>
+              <p class="cart_content">50 ر.س (شامل ضريبة القيمة المضافة)</p>
+              <div class="product_qty">
+                <button class="btn_qty">
+                  <i class="fas fa-plus"></i>
+                </button>
+                <input
+                  type="number"
+                  name="qty"
+                  id="qty"
+                  min="1"
+                  max="40"
+                  class="inp_qty"
+                  value="1"
+                />
+                <button class="btn_qty">
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
+            </blockquote>
+          </figure>
+          <figure class="cart_item">
+            <figcaption>
+              <img
+                src="/assets/images/product-1.jpg"
+                alt="cart product"
+                class="cart_img"
+              />
+              <button class="btn__remove">REMOVE</button>
+            </figcaption>
+            <blockquote class="cart_de">
+              <h5 class="cart_title">
+                <a href="single-shop.html"> القهوة المغمسة </a>
+              </h5>
+              <p class="cart_content">50 ر.س (شامل ضريبة القيمة المضافة)</p>
+              <div class="product_qty">
+                <button class="btn_qty">
+                  <i class="fas fa-plus"></i>
+                </button>
+                <input
+                  type="number"
+                  name="qty"
+                  id="qty"
+                  min="1"
+                  max="40"
+                  class="inp_qty"
+                  value="1"
+                />
+                <button class="btn_qty">
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
+            </blockquote>
+          </figure>
+        </div>
+        <footer class="cart_footer">
+          <a href="cart.html" class="btn_pay">
+            السلة <span>50 ر.س</span>
+            <span class="vat">(شامل ضريبة القيمة المضافة)</span>
+          </a>
+        </footer>
+      </div>
+    </div>
+    <!-- cart container end -->
+    <script src="/assets/js/index.js"></script>
+    <script>
+      const tabs = document.querySelectorAll('.form-box');
+      const steps = document.querySelectorAll('.stepper_item');
+      const btn = document.querySelector('.btn_form');
+      const form = document.querySelector('checkout');
+      var current = 0;
+      showCurrentTab(current);
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (1 && !validate()) return false;
+        tabs[current].classList.remove('active');
+        current += 1;
+        if (current >= tabs.length) {
+          form.submit();
+          return false;
+        }
+        showCurrentTab(current);
+        window.scrollTo({
+          top: form.offsetTop,
+          left: 0,
+          behavior: 'smooth',
+        });
+      });
+
+      function validate() {
+        var inputs = tabs[current].querySelectorAll('.form-control');
+        var active = true;
+        for (let inp = 0; inp < inputs.length; inp++) {
+          const elem = inputs[inp];
+
+          if (elem.value === '') {
+            elem.classList.add('empty');
+            active = false;
+          } else {
+            elem.classList.remove('empty');
+          }
+        }
+        if (active) {
+          steps[current].classList.add('active_step');
+        }
+        return active;
+      }
+
+      function showCurrentTab(i) {
+        tabs[i].classList.add('active');
+        if (i == tabs.length - 1) {
+          btn.innerHTML = 'ارسال';
+        } else {
+          btn.innerHTML = 'التالي';
+        }
+      }
+
+      const btnLogin = document.querySelector('.client');
+
+      btnLogin.onclick = () => {
+        document
+          .querySelector('.current_client .current__form')
+          .classList.toggle('active');
+      };
+    </script>
+  </body>
+</html>
