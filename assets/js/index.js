@@ -5,6 +5,7 @@ const menuBox = document.querySelector('.md__nav');
 const btnTop = document.querySelector('.btn-top');
 const btnCart = document.querySelector('.btn_cart');
 const cartBox = document.querySelector('.cart_container');
+const allItems = document.querySelectorAll('.header__nav .nav_item');
 
 // methods
 
@@ -24,4 +25,17 @@ window.onclick = (e) => {
   if (e.target === cartBox) {
     cartBox.classList.remove('active_cart');
   }
+};
+
+window.onload = () => {
+  allItems.forEach((item) => {
+    // console.log(
+    //   window.location.href.indexOf(item.querySelector('.nav_link').href)
+    // );
+    if (
+      window.location.href.indexOf(item.querySelector('.nav_link').href) !== -1
+    ) {
+      item.classList.add('active_link');
+    }
+  });
 };

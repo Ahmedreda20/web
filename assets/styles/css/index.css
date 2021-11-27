@@ -20,10 +20,11 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   --btn-size: 40px;
   --dark-gray: #222222;
   --light-gray: #f3f4f6;
-  --base-color: #045031;
-  --second-color: #005c37;
-  --active-color: #388d6b;
+  --base-color: #755348;
+  --second-color: #795e56;
+  --active-color: #d5ccbf;
   --bg-color: #fffbf5;
+  --bg-dark: #282c2f;
 }
 
 @font-face {
@@ -113,6 +114,45 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   justify-content: space-evenly;
   flex-wrap: nowrap;
 }
+.header__container .header__box .header__nav .list .active_link .nav_link {
+  color: var(--second-color);
+}
+.header__container .header__box .header__nav .list .active_link::after {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  background: linear-gradient(to bottom, #6b443712, #6b443705);
+}
+.header__container .header__box .header__nav .list .active_link::before {
+  width: 50%;
+  height: 5px;
+  position: absolute;
+  content: "";
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  background: #6b4437;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+.header__container .header__box .header__nav .list .nav_item {
+  position: relative;
+}
 .header__container .header__box .header__nav .list .nav_item .nav_link {
   font-weight: bolder;
   text-decoration: none;
@@ -126,7 +166,7 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   font-size: calc(var(--base-size) + 2px);
 }
 .header__container .header__box .header__nav .list .nav_item:hover .nav_link {
-  color: var(--active-color);
+  color: var(--second-color);
 }
 .header__container .header__box .search_box {
   position: fixed;
@@ -297,7 +337,7 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
 }
 
 .footer__container {
-  background-color: var(--active-color);
+  background-color: var(--bg-dark);
   padding: calc(var(--base-padding) + 30px) calc(var(--base-padding) + 10px);
   padding-bottom: 0px;
   position: relative;
@@ -333,7 +373,7 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   font-weight: bolder;
   text-decoration: none;
   padding: var(--base-padding);
-  color: var(--second-color);
+  color: var(--white);
   transition: color 0.5s ease-in-out;
   -webkit-transition: color 0.5s ease-in-out;
   -moz-transition: color 0.5s ease-in-out;
@@ -376,7 +416,7 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   padding: calc(var(--base-padding));
   font-weight: bold;
   border: none;
-  background-color: transparent;
+  background-color: var(--base-color);
   color: var(--white);
   cursor: pointer;
   transition: color background-color 0.2s ease-in-out;
@@ -385,10 +425,6 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   -ms-transition: color background-color 0.2s ease-in-out;
   -o-transition: color background-color 0.2s ease-in-out;
   margin-right: 10px;
-}
-.footer__container .footer__box .footer__nav .footer__sub .sub_btn:hover {
-  background-color: var(--active-color);
-  color: var(--white);
 }
 .footer__container .footer__box .footer__nav .social_list {
   list-style: none;
@@ -422,7 +458,7 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   font-size: calc(var(--base-size) + 2px);
 }
 .footer__container .copy_box {
-  border-top: 1px solid var(--second-color);
+  border-top: 1px solid var(--dark-gray);
   padding: calc(var(--base-padding) + 10px);
   text-align: center;
   color: var(--white);
@@ -690,6 +726,7 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
 .banner_container .banner_img {
   width: 100%;
   max-width: 1000px;
+  max-height: 500px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
