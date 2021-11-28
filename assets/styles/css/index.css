@@ -20,9 +20,9 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   --btn-size: 40px;
   --dark-gray: #222222;
   --light-gray: #f3f4f6;
-  --base-color: #755348;
-  --second-color: #795e56;
-  --active-color: #d5ccbf;
+  --base-color: #543a31;
+  --second-color: #58443e;
+  --active-color: #c09376;
   --bg-color: #fffbf5;
   --bg-dark: #282c2f;
 }
@@ -1079,13 +1079,13 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
   border: 1px solid #e5e7eb;
   position: relative;
   margin-left: 5px;
@@ -1113,6 +1113,7 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   -ms-transform: translate(-50%, -50%) rotate(-30deg);
   -o-transform: translate(-50%, -50%) rotate(-30deg);
   margin-left: -3px;
+  margin-top: 1px;
 }
 .current__form .form-group [type=checkbox]:checked::before {
   position: absolute;
@@ -1127,13 +1128,13 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   -o-border-radius: 999px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-  -moz-transform: translate(-50%, -50%) rotate(45deg);
-  -ms-transform: translate(-50%, -50%) rotate(45deg);
-  -o-transform: translate(-50%, -50%) rotate(45deg);
-  margin-left: 1px;
-  margin-top: -1px;
+  transform: translate(-50%, -50%) rotate(50deg);
+  -webkit-transform: translate(-50%, -50%) rotate(50deg);
+  -moz-transform: translate(-50%, -50%) rotate(50deg);
+  -ms-transform: translate(-50%, -50%) rotate(50deg);
+  -o-transform: translate(-50%, -50%) rotate(50deg);
+  margin-left: 2px;
+  margin-top: 0px;
 }
 .current__form .form-group [type=radio] {
   appearance: none;
@@ -2220,7 +2221,7 @@ grid, .product_items, .careers__container, .current__form .form-group .check_gro
   display: none;
 }
 
-.form-box {
+.form_steps .form-box {
   display: none;
 }
 
