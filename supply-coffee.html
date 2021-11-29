@@ -32,7 +32,7 @@
               <a href="shop.html" class="nav_link">المتجر</a>
             </li>
             <li class="nav_item">
-              <a href="about.html" class="nav_link">عن هجين</a>
+              <a href="about.html" class="nav_link">عن الشركة</a>
             </li>
             <li class="nav_item">
               <a href="corporate-membership.html" class="nav_link">
@@ -128,7 +128,7 @@
                   <a href="shop.html" class="nav_link">المتجر</a>
                 </li>
                 <li class="nav_item">
-                  <a href="about.html" class="nav_link">عن هجين</a>
+                  <a href="about.html" class="nav_link">عن الشركة</a>
                 </li>
                 <li class="nav_item">
                   <a href="corporate-membership.html" class="nav_link">
@@ -487,10 +487,8 @@
           <h3 class="nv__title">روابط سريعة</h3>
           <ul class="list">
             <li class="nav_item"><a href="#" class="nav_link">المتجر</a></li>
-            <li class="nav_item"><a href="#" class="nav_link">عن هجين</a></li>
-            <li class="nav_item">
-              <a href="#" class="nav_link">تعلم وابدا</a>
-            </li>
+            <li class="nav_item"><a href="#" class="nav_link">عن الشركة</a></li>
+
             <li class="nav_item">
               <a href="#" class="nav_link">حلول الجملة</a>
             </li>
@@ -554,7 +552,7 @@
         </nav>
       </div>
       <div class="copy_box">
-        © <span class="year">2021</span> جميع الحقوق محفوظة لمحمصة هجين
+        © <span class="year">-</span> جميع الحقوق محفوظة ia6g
       </div>
     </footer>
     <!-- footer end -->
@@ -649,57 +647,8 @@
     <!-- cart container end -->
 
     <script src="/assets/js/index.js"></script>
-    <script>
-      const tabs = document.querySelectorAll('.form-box');
-      const steps = document.querySelectorAll('.stepper_item');
-      const btn = document.querySelector('.btn_form');
-      const form = document.querySelector('form');
-      var current = 0;
-      showCurrentTab(current);
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (1 && !validate()) return false;
-        tabs[current].classList.remove('active');
-        current += 1;
-        if (current >= tabs.length) {
-          form.submit();
-          return false;
-        }
-        showCurrentTab(current);
-        window.scrollTo({
-          top: form.offsetTop,
-          left: 0,
-          behavior: 'smooth',
-        });
-      });
-
-      function validate() {
-        var inputs = tabs[current].querySelectorAll('.form-control');
-        var active = true;
-        for (let inp = 0; inp < inputs.length; inp++) {
-          const elem = inputs[inp];
-
-          if (elem.value === '') {
-            elem.classList.add('empty');
-            active = false;
-          } else {
-            elem.classList.remove('empty');
-          }
-        }
-        if (active) {
-          steps[current].classList.add('active_step');
-        }
-        return active;
-      }
-
-      function showCurrentTab(i) {
-        tabs[i].classList.add('active');
-        if (i == tabs.length - 1) {
-          btn.innerHTML = 'ارسال';
-        } else {
-          btn.innerHTML = 'التالي';
-        }
-      }
+    <script src="/assets/js/supply.js">
+      
     </script>
   </body>
 </html>

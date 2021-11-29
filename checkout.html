@@ -32,7 +32,7 @@
               <a href="shop.html" class="nav_link">المتجر</a>
             </li>
             <li class="nav_item">
-              <a href="about.html" class="nav_link">عن هجين</a>
+              <a href="about.html" class="nav_link">عن الشركة</a>
             </li>
             <li class="nav_item">
               <a href="corporate-membership.html" class="nav_link">
@@ -128,7 +128,7 @@
                   <a href="shop.html" class="nav_link">المتجر</a>
                 </li>
                 <li class="nav_item">
-                  <a href="about.html" class="nav_link">عن هجين</a>
+                  <a href="about.html" class="nav_link">عن الشركة</a>
                 </li>
                 <li class="nav_item">
                   <a href="corporate-membership.html" class="nav_link">
@@ -203,11 +203,13 @@
             الفاتورة.
           </p>
           <div class="form-group">
-            <label for="email" class="form-label"> البريد الإلكتروني* </label>
+            <label for="email_client" class="form-label">
+              البريد الإلكتروني*
+            </label>
             <input
               type="email"
-              name="email"
-              id="email"
+              name="email_client"
+              id="email_client"
               class="form-control"
               required
               autocomplete="off"
@@ -227,8 +229,8 @@
 
           <div class="form-group">
             <div class="agree-box">
-              <input type="checkbox" name="agree" id="agree" />
-              <label for="agree"> تذكرني </label>
+              <input type="checkbox" name="remember_me" id="remember_me" />
+              <label for="remember_me"> تذكرني </label>
             </div>
           </div>
           <div class="form-group form-buttons">
@@ -256,7 +258,7 @@
         <div class="cart_box cart_deatils">
           <h1 class="title--style">الفاتورة والشحن</h1>
           <div class="cart__de">
-            <form action="/" class="current__form checkout">
+            <form action="/" class="current__form checkout form_steps">
               <div class="form-box">
                 <div class="side">
                   <div class="form-group sm_width">
@@ -310,10 +312,10 @@
                 </div>
                 <div class="side">
                   <div class="form-group sm_width">
-                    <label for="branches" class="form-label"> المنطقة * </label>
+                    <label for="region" class="form-label"> المنطقة * </label>
                     <select
-                      name="branches"
-                      id="branches"
+                      name="region"
+                      id="region"
                       class="form-control"
                       required
                     >
@@ -322,12 +324,12 @@
                     </select>
                   </div>
                   <div class="form-group sm_width">
-                    <label for="branches" class="form-label">
+                    <label for="country" class="form-label">
                       الدولة / المنطقة *
                     </label>
                     <select
-                      name="branches"
-                      id="branches"
+                      name="country"
+                      id="country"
                       class="form-control"
                       required
                     >
@@ -527,10 +529,8 @@
           <h3 class="nv__title">روابط سريعة</h3>
           <ul class="list">
             <li class="nav_item"><a href="#" class="nav_link">المتجر</a></li>
-            <li class="nav_item"><a href="#" class="nav_link">عن هجين</a></li>
-            <li class="nav_item">
-              <a href="#" class="nav_link">تعلم وابدا</a>
-            </li>
+            <li class="nav_item"><a href="#" class="nav_link">عن الشركة</a></li>
+
             <li class="nav_item">
               <a href="#" class="nav_link">حلول الجملة</a>
             </li>
@@ -594,7 +594,7 @@
         </nav>
       </div>
       <div class="copy_box">
-        © <span class="year">2021</span> جميع الحقوق محفوظة لمحمصة هجين
+        © <span class="year">-</span> جميع الحقوق محفوظة ia6g
       </div>
     </footer>
     <!-- footer end -->
@@ -688,65 +688,6 @@
     </div>
     <!-- cart container end -->
     <script src="/assets/js/index.js"></script>
-    <script>
-      const tabs = document.querySelectorAll('.form-box');
-      const steps = document.querySelectorAll('.stepper_item');
-      const btn = document.querySelector('.btn_form');
-      const form = document.querySelector('checkout');
-      var current = 0;
-      showCurrentTab(current);
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (1 && !validate()) return false;
-        tabs[current].classList.remove('active');
-        current += 1;
-        if (current >= tabs.length) {
-          form.submit();
-          return false;
-        }
-        showCurrentTab(current);
-        window.scrollTo({
-          top: form.offsetTop,
-          left: 0,
-          behavior: 'smooth',
-        });
-      });
-
-      function validate() {
-        var inputs = tabs[current].querySelectorAll('.form-control');
-        var active = true;
-        for (let inp = 0; inp < inputs.length; inp++) {
-          const elem = inputs[inp];
-
-          if (elem.value === '') {
-            elem.classList.add('empty');
-            active = false;
-          } else {
-            elem.classList.remove('empty');
-          }
-        }
-        if (active) {
-          steps[current].classList.add('active_step');
-        }
-        return active;
-      }
-
-      function showCurrentTab(i) {
-        tabs[i].classList.add('active');
-        if (i == tabs.length - 1) {
-          btn.innerHTML = 'ارسال';
-        } else {
-          btn.innerHTML = 'التالي';
-        }
-      }
-
-      const btnLogin = document.querySelector('.client');
-
-      btnLogin.onclick = () => {
-        document
-          .querySelector('.current_client .current__form')
-          .classList.toggle('active');
-      };
-    </script>
+    <script src="assets/js/checkout.js"></script>
   </body>
 </html>

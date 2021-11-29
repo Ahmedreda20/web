@@ -32,7 +32,7 @@
               <a href="shop.html" class="nav_link">المتجر</a>
             </li>
             <li class="nav_item">
-              <a href="about.html" class="nav_link">عن هجين</a>
+              <a href="about.html" class="nav_link">عن الشركة</a>
             </li>
             <li class="nav_item">
               <a href="corporate-membership.html" class="nav_link">
@@ -128,7 +128,7 @@
                   <a href="shop.html" class="nav_link">المتجر</a>
                 </li>
                 <li class="nav_item">
-                  <a href="about.html" class="nav_link">عن هجين</a>
+                  <a href="about.html" class="nav_link">عن الشركة</a>
                 </li>
                 <li class="nav_item">
                   <a href="corporate-membership.html" class="nav_link">
@@ -310,7 +310,7 @@
           </ul>
           <span class="title">الكمية</span>
           <div class="product_qty">
-            <button class="btn_qty">
+            <button class="btn_qty btn_inc">
               <i class="fas fa-plus"></i>
             </button>
             <input
@@ -322,7 +322,7 @@
               class="inp_qty"
               value="1"
             />
-            <button class="btn_qty">
+            <button class="btn_qty btn_dic">
               <i class="fas fa-minus"></i>
             </button>
           </div>
@@ -554,10 +554,8 @@
           <h3 class="nv__title">روابط سريعة</h3>
           <ul class="list">
             <li class="nav_item"><a href="#" class="nav_link">المتجر</a></li>
-            <li class="nav_item"><a href="#" class="nav_link">عن هجين</a></li>
-            <li class="nav_item">
-              <a href="#" class="nav_link">تعلم وابدا</a>
-            </li>
+            <li class="nav_item"><a href="#" class="nav_link">عن الشركة</a></li>
+
             <li class="nav_item">
               <a href="#" class="nav_link">حلول الجملة</a>
             </li>
@@ -621,7 +619,7 @@
         </nav>
       </div>
       <div class="copy_box">
-        © <span class="year">2021</span> جميع الحقوق محفوظة لمحمصة هجين
+        © <span class="year">-</span> جميع الحقوق محفوظة ia6g
       </div>
     </footer>
     <!-- footer end -->
@@ -649,11 +647,14 @@
             </figcaption>
             <blockquote class="cart_de">
               <h5 class="cart_title">
-                <a href="single-shop.html"> القهوة المغمسة </a>
+                <a href="single-shop.html"> المعمول الذهبي </a>
               </h5>
-              <p class="cart_content">50 ر.س (شامل ضريبة القيمة المضافة)</p>
+              <p class="cart_content">
+                <span class="price" data-price="50">50</span> ر.س (شامل ضريبة
+                القيمة المضافة)
+              </p>
               <div class="product_qty">
-                <button class="btn_qty">
+                <button class="btn_qty btn_inc">
                   <i class="fas fa-plus"></i>
                 </button>
                 <input
@@ -665,7 +666,7 @@
                   class="inp_qty"
                   value="1"
                 />
-                <button class="btn_qty">
+                <button class="btn_qty btn_dic">
                   <i class="fas fa-minus"></i>
                 </button>
               </div>
@@ -682,11 +683,14 @@
             </figcaption>
             <blockquote class="cart_de">
               <h5 class="cart_title">
-                <a href="single-shop.html"> القهوة المغمسة </a>
+                <a href="single-shop.html"> المعمول الذهبي </a>
               </h5>
-              <p class="cart_content">50 ر.س (شامل ضريبة القيمة المضافة)</p>
+              <p class="cart_content">
+                <span class="price" data-price="50">50</span> ر.س (شامل ضريبة
+                القيمة المضافة)
+              </p>
               <div class="product_qty">
-                <button class="btn_qty">
+                <button class="btn_qty btn_inc">
                   <i class="fas fa-plus"></i>
                 </button>
                 <input
@@ -698,7 +702,7 @@
                   class="inp_qty"
                   value="1"
                 />
-                <button class="btn_qty">
+                <button class="btn_qty btn_dic">
                   <i class="fas fa-minus"></i>
                 </button>
               </div>
@@ -707,7 +711,8 @@
         </div>
         <footer class="cart_footer">
           <a href="cart.html" class="btn_pay">
-            السلة <span>50 ر.س</span>
+            السلة
+            <span><span class="price" data-price="100">100</span> ر.س</span>
             <span class="vat">(شامل ضريبة القيمة المضافة)</span>
           </a>
         </footer>
@@ -716,5 +721,6 @@
     <!-- cart container end -->
 
     <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/shop.js"></script>
   </body>
 </html>
