@@ -7,16 +7,27 @@ const btnCart = document.querySelector('.btn_cart');
 const cartBox = document.querySelector('.cart_container');
 const allItems = document.querySelectorAll('.header__nav .nav_item');
 const year = document.querySelector('.year');
+const body = document.querySelector('body');
 
 // methods
 
 btnTop.onclick = () => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-btnMenu.onclick = () => menuBox.classList.add('active');
-btnSearch.onclick = () => searchBox.classList.add('active');
-searchBox.querySelector('.btn__close').onclick = () =>
+btnMenu.onclick = () => {
+  menuBox.classList.add('active');
+  document.body.classList.add('stop_scroll');
+};
+btnSearch.onclick = () => {
+  searchBox.classList.add('active');
+  document.body.classList.add('stop_scroll');
+};
+searchBox.querySelector('.btn__close').onclick = () => {
   searchBox.classList.remove('active');
-menuBox.querySelector('.btn__close').onclick = () =>
+  document.body.classList.remove('stop_scroll');
+};
+menuBox.querySelector('.btn__close').onclick = () => {
   menuBox.classList.remove('active');
+  document.body.classList.remove('stop_scroll');
+};
 
 btnCart.onclick = () => cartBox.classList.add('active_cart');
 cartBox.querySelector('.btn__close').onclick = () =>
@@ -44,6 +55,7 @@ window.onload = () => {
 const cartContainer = document.querySelector('.cart_container');
 const Items = document.querySelectorAll('.cart_item');
 var total = cartContainer.querySelector('.cart_footer .price');
+
 Items.forEach((item) => {
   let btnNxt = item.querySelector('.btn_inc');
   let btnPrv = item.querySelector('.btn_dic');
@@ -100,3 +112,22 @@ function calcTotal() {
   totalPrice = Math.round(totalPrice * 100) / 100;
   total.innerHTML = totalPrice;
 }
+
+/* ------------------------------- fixed header when scroll to bottom :> --------------------------------- */
+
+const header = document.querySelector('.header__container');
+
+window.onscroll = () => {
+  let headerHeight = header.getBoundingClientRect().height;
+  let pageY = window.scrollY;
+
+  if (pageY >= headerHeight) {
+    header.classList.add('fixed_header');
+    header.querySelector('.header__logo').setAttribute('height', '60');
+  } else {
+    header.classList.remove('fixed_header');
+    header.querySelector('.header__logo').setAttribute('height', '80');
+  }
+  // console.log(header.getBoundingClientRect().height);
+  // console.log(window.scrollY);
+};

@@ -194,7 +194,7 @@
       <div class="cart_wrapper">
         <div class="cart_box cart_deatils">
           <h1 class="title--style">سلة التسوق</h1>
-          <div class="cart__de">
+          <div class="cart__de cart_details--box">
             <table>
               <thead>
                 <th></th>
@@ -204,7 +204,7 @@
                 <th>المجموع</th>
               </thead>
               <tbody>
-                <tr>
+                <tr class="cart__item" data-id="0">
                   <td>
                     <button class="btn_remove">
                       <i class="fas fa-times"></i>
@@ -219,10 +219,10 @@
                       class="pro_img"
                     />
                   </td>
-                  <td>50 ر.س</td>
+                  <td><span class="qty"></span> 50 ر.س</td>
                   <td>
                     <div class="product_qty">
-                      <button class="btn_qty">
+                      <button class="btn_qty btn_inc">
                         <i class="fas fa-plus"></i>
                       </button>
                       <input
@@ -234,12 +234,15 @@
                         class="inp_qty"
                         value="1"
                       />
-                      <button class="btn_qty">
+                      <button class="btn_qty btn_dic">
                         <i class="fas fa-minus"></i>
                       </button>
                     </div>
                   </td>
-                  <td>50 ر.س (شامل ضريبة القيمة المضافة)</td>
+                  <td>
+                    <span class="price" data-price="50">50</span> ر.س (شامل
+                    ضريبة القيمة المضافة)
+                  </td>
                 </tr>
                 <tr>
                   <td colspan="5">
@@ -252,7 +255,7 @@
         </div>
         <div class="cart_box">
           <h1 class="title--style">إجمالي سلة المشتريات</h1>
-          <div class="cart__de">
+          <div class="cart__de cart_details--total">
             <table>
               <thead>
                 <tr>
@@ -261,13 +264,13 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr class="cart__item" data-id="0">
                   <td>
                     <a href="single-shop.html" class="pro__title">
                       المعمول الذهبي
                     </a>
                   </td>
-                  <td>50 ر.س</td>
+                  <td><span class="price">50</span> ر.س</td>
                 </tr>
                 <tr>
                   <td colspan="2">
@@ -464,5 +467,6 @@
     </div>
     <!-- cart container end -->
     <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/cart.js"></script>
   </body>
 </html>
