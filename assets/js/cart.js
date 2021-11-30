@@ -46,8 +46,8 @@ cartItems.forEach((item) => {
     handlePriceCartInsideTotalCart(item.dataset.id, 'remove');
   };
 });
-// if necessary
 
+// if necessary
 function calcCartTotal() {
   let cartRows = document.querySelectorAll('.cart_container .cart_item');
 
