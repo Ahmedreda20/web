@@ -1,15 +1,14 @@
 $(document).ready(() => {
   $('.slide_container').slick({
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
     loop: true,
-    dots: false,
-    arrows: false,
+    dots: true,
+    arrows: true,
     autoplay: true,
     rtl: true,
-    centerMode: true,
-    centerPadding: '20px',
+
+    prevArrow: `<i class="fas fa-angle-left slick-prev"></i>`,
+    nextArrow: `<i class="fas fa-angle-right slick-next"></i>`,
     responsive: [
       {
         breakpoint: 768,
@@ -28,3 +27,17 @@ $(document).ready(() => {
     ],
   });
 });
+
+const slideItems = document.querySelectorAll('.slide_container .slide_item');
+const preview = document.querySelector('.preview_container');
+
+slideItems.forEach((slide) => {
+  slide.ondblclick = () => {
+    preview.classList.add('active_preview');
+    preview.querySelector('.slide_item img').src =
+      slide.querySelector('img').src;
+  };
+});
+
+preview.querySelector('.btn_close').onclick = () =>
+  preview.classList.remove('active_preview');
